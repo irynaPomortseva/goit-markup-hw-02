@@ -9,15 +9,18 @@
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
+    --hover-btn-color: #188CE8;
     --nav-list-color: #000000;
+    --secondary-bgc: #2F303A;
+    --filter-btn-color: #F5F4FA;
     --address-list-color:
     #FFFFFF;
-   
 }
 
 body {
     font-family: var(--primary-font-family);
     color: var(--address-list-color);
+    letter-spacing: 0.3em;
 }
 
 .list {
@@ -26,10 +29,6 @@ body {
 
 .link {
     text-decoration: none;
-}
-
-.active-page {
-    color: var(--accent-color);
 }
 
 /* Шапка */
@@ -44,7 +43,7 @@ body {
 }
 
 .head-logo {
-color: #000000;
+    color: var(--nav-list-color);
 }
 
 .nav-list-link  {
@@ -76,7 +75,7 @@ color: #000000;
 /* Головна частина */
 
 .hero {
-    background: #2F303A;
+    background: var(--secondary-bgc);
 }
 
 .main-title {
@@ -84,7 +83,8 @@ color: #000000;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    letter-spacing: 0.06em;text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--address-list-color);
 }
 
@@ -92,7 +92,10 @@ color: #000000;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex; align-items: center;text-align: center;letter-spacing: 0.06em;
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: var(--address-list-color);
     background:var(--accent-color);
     cursor: pointer;
@@ -100,7 +103,7 @@ color: #000000;
 
 .modal-button:hover,
 .modal-button:focus {
-    background: #188CE8;
+    background: var(--hover-btn-color);
 }
 
 /* Перевага */
@@ -110,55 +113,56 @@ color: #000000;
 }
 
 .advantage-titles {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
 }
 
 .titles-descrpt {
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
 }
 
 /* Чим ми займаємося */
 
 .secondary-title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    
 }
 
 /* Наша команда */
 
 .member-name {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
 .member-position {
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
 }
 
 /* Footer */
 
 .footer {
-    background: #2F303A;
+    background: var(--secondary-bgc);
 }
 
 .address-link {
@@ -184,17 +188,14 @@ color: var(--secondary-text-color);
 }
 
 .filter-btn {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
-background: #F5F4FA;
-cursor: pointer;
-
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--primary-text-color);
+    background: var(--filter-btn-color);
+    cursor: pointer;
 }
 
 .filter-btn:hover,
@@ -205,27 +206,30 @@ cursor: pointer;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--address-list-color);background-color: #2196F3;
+    color: var(--address-list-color);
     background-color:var(--accent-color);
 }
 
 .projects-name {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
 }
 
 .projects-type {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
 }
 
 .projects-descrptn {
     visibility: hidden;
+}
+
+.active-page {
+    color: var(--accent-color);
 }
